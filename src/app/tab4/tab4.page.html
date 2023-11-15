@@ -4,3 +4,16 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <!-- Aqui você pode exibir e editar os dados do perfil -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input [(ngModel)]="userName" placeholder="Seu nome"></ion-input>
+    </ion-item>
+    <!-- Adicione mais campos para editar outros dados do perfil -->
+  </ion-list>
+
+  <!-- Botão para salvar as alterações -->
+  <ion-button (click)="salvarPerfil()">Salvar</ion-button>
+</ion-content>
