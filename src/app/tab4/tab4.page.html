@@ -8,10 +8,21 @@
   <!-- Aqui você pode exibir e editar os dados do perfil -->
   <ion-list>
     <ion-item>
-      <ion-label>Nome</ion-label>
+      <ion-label position="floating">Seu nome</ion-label>
       <ion-input [(ngModel)]="userName" placeholder="Seu nome"></ion-input>
     </ion-item>
-    <!-- Adicione mais campos para editar outros dados do perfil -->
+    <ion-item>
+      <ion-label position="floating">Seu email</ion-label>
+      <ion-input [(ngModel)]="userEmail" placeholder="Seu email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Seu telefone</ion-label>
+      <ion-input [(ngModel)]="userPhone" placeholder="Seu telefone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Seu endereço</ion-label>
+      <ion-input [(ngModel)]="userAddress" placeholder="Seu endereço"></ion-input>
+    </ion-item>
   </ion-list>
 
   <!-- Botão para salvar as alterações -->

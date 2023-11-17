@@ -1,0 +1,23 @@
+// global.scss
+
+@import 'src/theme/variables';
+
+// Aplicando as variáveis de tema às tabs
+ion-tabs {
+  --ion-color-primary: $cor-primaria;
+  --ion-color-secondary: $cor-secundaria;
+
+  --ion-font-family: $fonte-titulo;
+  --ion-text-color: $cor-primaria;
+
+  --ion-font-size: $tamanho-texto;
+
+  // Adicione mais estilos específicos das tabs aqui, se necessário
+}
+
+.imagem-anuncio {
+  width: 100%; /* Defina a largura desejada para as imagens */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
