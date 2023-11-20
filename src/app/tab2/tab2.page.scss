@@ -1,5 +1,16 @@
+ion-card {
+  width: calc(10px); /* Defina a largura desejada para cada card */
+  margin-bottom: 10px; /* Espaçamento entre os cards */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* ou outro valor de alinhamento que preferir */
+}
+
 .custom-card {
-    width: 2500px; /* Defina a largura desejada */
+    width: 250git initpx; /* Defina a largura desejada */
     height: auto; /* Defina a altura desejada */
     text-align: justify;
 
