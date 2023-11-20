@@ -130,6 +130,12 @@
   
 
   <!-- Botão para ir para a página de pagamento -->
+  <ion-fab slot="fixed" horizontal="end">
+    <ion-fab-button (click)="irParaPagamento()">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
   <ion-button (click)="irParaPagamento()">Faça já o seu Pedido</ion-button>
 </ion-content>
 
