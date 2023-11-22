@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/auth.service'; // Verifique o caminho correto para o seu AuthService
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,19 +8,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage {
+  username: string = ''; // Inicializando as propriedades username e password
+  password: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   fazerLogin() {
-    // Aqui você pode adicionar a lógica para o login
-    // Por exemplo, autenticação de usuário
-
-    // Após o login bem-sucedido, redireciona para a tab1
-    this.router.navigateByUrl('/tabs/tab1');
+    this.authService.login(this.username, this.password).then((authenticated: boolean) => {
+      if (authenticated) {
+        // Redirecionar para a página após o login bem-sucedido
+        this.router.navigateByUrl('/tabs'); // Substitua '/tabs' pela rota desejada após o login
+      } else {
+        // Mostrar mensagem de erro ou lidar com o login inválido
+      }
+    });
   }
 
   irParaCadastro() {
-    // Redireciona para a página de cadastro
+    // Redirecionar para a página de cadastro
     this.router.navigateByUrl('/cadastro');
   }
 }
