@@ -28,19 +28,19 @@ const routes: Routes = [
         loadChildren: () => import('../pagamento/pagamento.module').then(m => m.PagamentoPageModule)
       },
       {
-        path: 'login',
-        loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
-      },
-      {
         path: '',
-        redirectTo: '/tabs/login', // Alteração para redirecionar para a página de login
+        redirectTo: 'login', // Redireciona para a página de login
         pathMatch: 'full'
       }
     ]
   },
   {
+    path: 'login', // Rota para a página de login
+    loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
+  },
+  {
     path: '',
-    redirectTo: '/tabs/login', // Redirecionamento para a página de login caso a rota principal seja acessada
+    redirectTo: '/login', // Redirecionamento para a página de login caso a rota principal seja acessada
     pathMatch: 'full'
   }
 ];

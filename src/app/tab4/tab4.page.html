@@ -4,24 +4,35 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <!-- Aqui você pode exibir e editar os dados do perfil -->
+<ion-content class="ion-padding">
   <ion-list>
     <ion-item>
-      <ion-label position="floating">Seu nome</ion-label>
-      <ion-input [(ngModel)]="userName" placeholder="Seu nome"></ion-input>
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input [(ngModel)]="nomeCompleto" placeholder="Nome Completo"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Seu email</ion-label>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="username" placeholder="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Endereço Email</ion-label>
       <ion-input [(ngModel)]="userEmail" placeholder="Seu email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input [(ngModel)]="endereco" placeholder="Endereço"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CEP</ion-label>
+      <ion-input [(ngModel)]="cep" placeholder="CEP"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Seu telefone</ion-label>
       <ion-input [(ngModel)]="userPhone" placeholder="Seu telefone"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Seu endereço</ion-label>
-      <ion-input [(ngModel)]="userAddress" placeholder="Seu endereço"></ion-input>
+      <ion-label position="floating">Chave Pix</ion-label>
+      <ion-input [(ngModel)]="chavePix" placeholder="Chave Pix"></ion-input>
     </ion-item>
   </ion-list>
 
@@ -30,8 +41,3 @@
   <!-- Botão para ir para a página de login -->
   <ion-button (click)="irParaLogin()">Ir para o Login</ion-button>
 </ion-content>
-
-<ion-content>
-  
-</ion-content>
-

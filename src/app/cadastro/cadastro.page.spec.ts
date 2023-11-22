@@ -1,11 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { CadastroPage } from './cadastro.page';
 
 describe('CadastroPage', () => {
   let component: CadastroPage;
   let fixture: ComponentFixture<CadastroPage>;
 
-  beforeEach(async(() => {
+  beforeEach(fakeAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [CadastroPage],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CadastroPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
