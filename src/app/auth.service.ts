@@ -19,6 +19,18 @@ export class AuthService {
     }
   }
 
+  register(nomeCompleto: string, username: string, password: string): Promise<boolean> {
+    // Aqui você pode realizar a lógica de registro do usuário, como fazer uma requisição HTTP para um backend
+    // Este é um exemplo simples simulando um registro bem-sucedido
+    if (nomeCompleto && username && password) {
+      console.log('Usuário registrado:', nomeCompleto, username);
+      return Promise.resolve(true);
+    } else {
+      console.error('Erro ao registrar o usuário.');
+      return Promise.resolve(false);
+    }
+  }
+
   logout(): void {
     // Lógica de logout aqui
     // Limpe o token JWT ou outras informações de autenticação
