@@ -1,13 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-input type="text" name="username" placeholder="username" maxlength="15"></ion-input>
+<ion-content class="ion-padding">
+  <!-- Campos de entrada -->
+  <div class="input-container">
+    <ion-input type="text" name="username" placeholder="Username" maxlength="15"></ion-input>
+    <ion-input type="password" name="password" placeholder="Senha" maxlength="15"></ion-input>
+  </div>
 
-  <ion-input type="password" name="password" placeholder="senha" maxlength="15"></ion-input>
+  <!-- Botão de Login -->
+  <ion-button expand="block" (click)="fazerLogin()">Login</ion-button>
 
-
+  <!-- Espaço para cadastro -->
+  <div class="cadastro-link">
+    <p>Ainda não tem uma conta?</p>
+    <ion-button size="small" fill="clear" (click)="irParaCadastro()">Cadastrar-se</ion-button>
+  </div>
 </ion-content>

@@ -33,14 +33,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/login', // Alteração para redirecionar para a página de login
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/login', // Redirecionamento para a página de login caso a rota principal seja acessada
     pathMatch: 'full'
   }
 ];

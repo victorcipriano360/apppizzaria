@@ -1,13 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+    <ion-title>Cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cadastro</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="input-container">
+    <ion-input type="text" name="nomeCompleto" placeholder="Nome Completo"></ion-input>
+    <ion-input type="text" name="username" placeholder="Username"></ion-input>
+    <ion-input type="password" name="senha" placeholder="Senha"></ion-input>
+    <ion-input type="password" name="confirmarSenha" placeholder="Confirmar Senha"></ion-input>
+    <ion-input type="text" name="endereco" placeholder="Endereço"></ion-input>
+    <ion-input type="text" name="Bairro/Estado" placeholder="Bairro/Estado"></ion-input>
+    <ion-input type="text" name="N°Casa" placeholder="N° Casa"></ion-input>
+    <ion-input type="text" name="cep" placeholder="CEP"></ion-input>
+    <ion-input type="text" name="chavePix" placeholder="Chave Pix"></ion-input>
+  </div>
+
+  <ion-button expand="block" (click)="fazerCadastro()">Cadastrar</ion-button>
 </ion-content>
