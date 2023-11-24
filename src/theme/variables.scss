@@ -8,14 +8,27 @@ ion-title {
   // Tema dos tabs
 ion-tab-bar {
     --color: #fff; // Cor do texto dos ícones
-    --background: #333; // Cor de fundo dos tabs
+    --background: #ec854a; // Cor de fundo dos tabs
     --border-color: #666; // Cor da borda dos tabs
   }
   
   ion-tab-button {
-    --color-selected: #fff; // Cor do texto do tab selecionado
+    --color-selected: #131212; // Cor do texto do tab selecionado
     --color-default: #ccc; // Cor do texto do tab não selecionado
     --background-selected: #000; // Cor de fundo do tab selecionado
     --background-focused: #111; // Cor de fundo do tab em foco
   }
-  
+  /* Defina o gradiente de fundo para o aplicativo */
+ion-content {
+  --background: linear-gradient(to bottom right, #f3dcbf, #FFA500);
+  --ion-background-color: transparent;
+}
+
+/* Define o texto em branco para melhor visibilidade */
+ion-content, ion-card-title, ion-card-subtitle, ion-label {
+  color: white;
+}
+/* Defina a cor do texto como preto */
+* {
+  color: black !important;
+}
