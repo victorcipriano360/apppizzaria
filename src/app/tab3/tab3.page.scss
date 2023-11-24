@@ -1,36 +1,26 @@
-// Personalizando o estilo dos títulos das páginas
-ion-title {
-  font-size: 24px; // Tamanho da fonte
-  font-weight: bold; // Peso da fonte
-  color: #333; // Cor do texto do título
-  // Outras propriedades de estilo conforme necessário
-}
-// Tema dos tabs
-ion-tab-bar {
-  --color: #fff; // Cor do texto dos ícones
-  --background: #ec854a; // Cor de fundo dos tabs
-  --border-color: #666; // Cor da borda dos tabs
+ion-card {
+  width: calc(200px); /* Defina a largura desejada para cada card */
+  margin-bottom: 10px; /* Espaçamento entre os cards */
 }
 
-ion-tab-button {
-  --color-selected: #131212; // Cor do texto do tab selecionado
-  --color-default: #ccc; // Cor do texto do tab não selecionado
-  --background-selected: #000; // Cor de fundo do tab selecionado
-  --background-focused: #111; // Cor de fundo do tab em foco
-}
-/* Defina o gradiente de fundo para o aplicativo */
-ion-content {
---background: linear-gradient(to bottom right, #f3dcbf, #FFA500);
---ion-background-color: transparent;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ou outro valor de alinhamento que preferir */
 }
 
-/* Define o texto em branco para melhor visibilidade */
-ion-content, ion-card-title, ion-card-subtitle, ion-label {
-color: white;
-}
-/* Defina a cor do texto como preto */
-* {
-color: black !important;
-}
+.custom-card {
+    width: 250git initpx; /* Defina a largura desejada */
+    height: auto; /* Defina a altura desejada */
+    text-align: justify;
 
-@import 'src/theme/variables';
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+  
