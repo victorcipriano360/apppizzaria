@@ -36,4 +36,20 @@ ion-title {
     color: #333; // Cor do texto do título
     // Outras propriedades de estilo conforme necessário
   }
+  ion-card {
+    width: 45%; /* Ajusta a largura dos cards para exibir dois por linha */
+    margin: 10px; /* Adiciona um espaço entre os cards */
+  }
+  
+  @media (max-width: 767px) {
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    ion-card {
+      width: 90%; /* Define a largura para exibição em dispositivos menores */
+    }
+  }
   
