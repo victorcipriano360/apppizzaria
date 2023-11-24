@@ -23,5 +23,33 @@
     <ion-label>{{ valorTotal | currency: 'BRL' }}</ion-label>
   </ion-item>
 
+  <div class="card-container">
+    <ion-card class="custom-card">
+      <img src="assets/imagens/picpay.png" alt="Froma de pagamento">
+      <ion-card-header>
+        <ion-card-title>Pix PicPay</ion-card-title>
+        <ion-card-subtitle>CHAVE PIX: (81) 99244-0104</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Obrigado pela preferência, seu pedido chegará em breve
+      </ion-card-content>
+      <ion-button expand="block" routerLink="/agradecimento">Ver mais</ion-button>
+    </ion-card>
+
+    <ion-card class="custom-card">
+      <img src="assets/imagens/nubank.png" alt="Forma de pagamento">
+      <ion-card-header>
+        <ion-card-title>Pix Nubank</ion-card-title>
+        <ion-card-subtitle>CHAVE PIX: (81) 99244-0104</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Obrigado pela preferência, seu pedido chegará em breve
+      </ion-card-content>
+      <ion-button expand="block" routerLink="/agradecimento">Ver mais</ion-button>
+    </ion-card>
+
+    <!-- Adicione mais cards conforme necessário -->
+  </div>
+
   <ion-button expand="block" (click)="resetarContagem()" color="danger">Resetar Contagem</ion-button>
 </ion-content>

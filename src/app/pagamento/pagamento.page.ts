@@ -9,6 +9,12 @@ export class PagamentoPage {
   listaDePizzas: any[] = [
     { nome: 'Pizza de Queijo', preco: 22.0, quantidade: 0 },
     { nome: 'Pizza de Calabresa', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Frango', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Presunto', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Portuguêsa', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de 4 Queijos', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Frango C/Cheddar', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Frango C/Catupiry', preco: 22.0, quantidade: 0 },
     // Adicione outras pizzas conforme necessário
   ];
 
