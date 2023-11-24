@@ -7,7 +7,7 @@ ion-title {
   }
   // Tema dos tabs
 ion-tab-bar {
-    --color: #fff; // Cor do texto dos ícones
+    --color: #ec854a; // Cor do texto dos ícones
     --background: #ec854a; // Cor de fundo dos tabs
     --border-color: #666; // Cor da borda dos tabs
   }
@@ -32,3 +32,12 @@ ion-content, ion-card-title, ion-card-subtitle, ion-label {
 * {
   color: black !important;
 }
+
+
+  /* Definindo a imagem de fundo */
+  ion-content {
+    --background-image: url('/assets/imagens/pizzasemfundo.jpg');
+    --background-size: cover;
+    --background-position: center;
+    --background-repeat: no-repeat;
+  }

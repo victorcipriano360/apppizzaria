@@ -1,52 +1,26 @@
-// global.scss
-
-@import 'src/theme/variables';
-
-
-
 ion-card {
   width: calc(200px); /* Defina a largura desejada para cada card */
-  margin-bottom: 20px; /* Aumentei o espaçamento entre os cards para 20px */
+  margin-bottom: 10px; /* Espaçamento entre os cards */
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* ou outro valor de alinhamento que preferir */
+  justify-content: center; /* ou outro valor de alinhamento que preferir */
 }
 
 .custom-card {
-  width: 250px; /* Defina a largura desejada */
-  height: auto; /* Defina a altura desejada */
-  text-align: justify;
-  padding: 10px; /* Simplifiquei a definição de padding para todos os lados */
-}
+    width: 250git initpx; /* Defina a largura desejada */
+    height: auto; /* Defina a altura desejada */
+    text-align: justify;
 
-h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+h1{
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
 }
-// Personalizando o estilo do título da página tab1
-ion-title {
-    font-size: 24px; // Tamanho da fonte
-    font-weight: bold; // Peso da fonte
-    color: #333; // Cor do texto do título
-    // Outras propriedades de estilo conforme necessário
-  }
-  ion-card {
-    width: 45%; /* Ajusta a largura dos cards para exibir dois por linha */
-    margin: 10px; /* Adiciona um espaço entre os cards */
-  }
-  
-  @media (max-width: 767px) {
-    .card-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    ion-card {
-      width: 90%; /* Define a largura para exibição em dispositivos menores */
-    }
-  }
   
