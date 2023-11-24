@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagamento',
@@ -7,18 +6,34 @@ import { Router } from '@angular/router';
   styleUrls: ['./pagamento.page.scss'],
 })
 export class PagamentoPage {
+  listaDePizzas: any[] = [
+    { nome: 'Pizza de Queijo', preco: 22.0, quantidade: 0 },
+    { nome: 'Pizza de Calabresa', preco: 22.0, quantidade: 0 },
+    // Adicione outras pizzas conforme necessário
+  ];
 
-  valorTotal: number = 0; // Valor total que será enviado para a página de pagamento
+  quantidadeTotalPizzas: number = 0;
+  valorTotal: number = 0;
 
-  constructor(private router: Router) {}
+  atualizarTotal() {
+    this.quantidadeTotalPizzas = this.listaDePizzas.reduce((total, pizza) => total + pizza.quantidade, 0);
+    this.valorTotal = this.listaDePizzas.reduce((total, pizza) => total + (pizza.preco * pizza.quantidade), 0);
+  }
 
-  // Função que redireciona para a página de pagamento com o valor total
-  irParaPagamento() {
-    // Enviar o valor total para a página de pagamento (usando queryParams)
-    this.router.navigate(['/pagina-pagamento'], {
-      queryParams: {
-        valorTotal: this.valorTotal.toFixed(2), // Arredondar para 2 casas decimais
-      },
-    });
+  diminuirQuantidade(pizza: any) {
+    if (pizza.quantidade > 0) {
+      pizza.quantidade--;
+      this.atualizarTotal();
+    }
+  }
+
+  aumentarQuantidade(pizza: any) {
+    pizza.quantidade++;
+    this.atualizarTotal();
+  }
+
+  resetarContagem() {
+    this.listaDePizzas.forEach(pizza => pizza.quantidade = 0);
+    this.atualizarTotal();
   }
 }
